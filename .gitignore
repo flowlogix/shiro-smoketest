@@ -1,0 +1,14 @@
+**.orig
+**.chg
+**.rej
+**.conflict
+target
+**/nbproject
+**.classpath
+**.factorypath
+**.project
+**.settings
+**.vscode
+**.DS_Store
+**.idea
+**nb-configuration.xml
