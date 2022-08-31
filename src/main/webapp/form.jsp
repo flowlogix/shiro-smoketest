@@ -17,5 +17,6 @@
                 type="text" name="city" /><br /> <input type="submit"
                 value="Submit ..." />
         </form>
+        <a href="auth/logout">Logout</a>
     </body>
 </html>
