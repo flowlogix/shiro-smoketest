@@ -5,7 +5,7 @@
     <artifactId>shiro-smoketest</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>shiro-smoketest-1.0-SNAPSHOT</name>
+    <name>shiro-smoketest</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
