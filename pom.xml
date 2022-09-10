@@ -25,7 +25,7 @@
         <dependency>
             <groupId>org.omnifaces</groupId>
             <artifactId>omnifaces</artifactId>
-            <version>3.13.4-fl-1</version>
+            <version>3.13.4-fl-2</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
