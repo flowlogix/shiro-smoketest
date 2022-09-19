@@ -20,7 +20,7 @@
         <dependency>
             <groupId>com.flowlogix</groupId>
             <artifactId>shiro-ee</artifactId>
-            <version>5.0-M1</version>
+            <version>5.0-M2</version>
         </dependency>
         <dependency>
             <groupId>org.omnifaces</groupId>
@@ -61,10 +61,6 @@
                 <defaultGoal>jetty:run</defaultGoal>
             </build>
             <dependencies>
-                <dependency>
-                    <groupId>javax</groupId>
-                    <artifactId>javaee-web-api</artifactId>
-                </dependency>
                 <dependency>
                     <groupId>jakarta.enterprise</groupId>
                     <artifactId>jakarta.enterprise.cdi-api</artifactId>
