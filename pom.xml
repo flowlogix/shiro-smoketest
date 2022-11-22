@@ -13,8 +13,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-web-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -42,9 +42,9 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>javax</groupId>
-                <artifactId>javaee-web-api</artifactId>
-                <version>8.0.1</version>
+                <groupId>jakarta.platform</groupId>
+                <artifactId>jakarta.jakartaee-web-api</artifactId>
+                <version>8.0.0</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.enterprise</groupId>
@@ -89,6 +89,9 @@
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.4.49.v20220914</version>
+                <configuration>
+                    <jettyXml>${basedir}/src/main/webapp/WEB-INF/jetty-env.xml</jettyXml>
+                </configuration>
             </plugin>
         </plugins>
     </build>
