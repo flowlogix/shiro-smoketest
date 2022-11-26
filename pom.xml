@@ -53,6 +53,12 @@
             <artifactId>shiro-web</artifactId>
             <version>${shiro.version}</version>
             <classifier>jakarta</classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.shiro</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.omnifaces</groupId>
