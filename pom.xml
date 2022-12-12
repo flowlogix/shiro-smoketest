@@ -10,7 +10,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <shiro.version>2.0.0-lp-nov21-2</shiro.version>
-        <flowlogix.version>5.1.4</flowlogix.version>
+        <flowlogix.version>5.1.5</flowlogix.version>
         <slf4j.version>2.0.5</slf4j.version>
     </properties>
 
