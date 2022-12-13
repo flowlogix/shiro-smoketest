@@ -9,8 +9,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <shiro.version>2.0.0-lp-nov21-2</shiro.version>
-        <flowlogix.version>5.1.4</flowlogix.version>
+        <shiro.version>2.0.0-lp-nov30</shiro.version>
+        <flowlogix.version>5.1.5</flowlogix.version>
         <slf4j.version>2.0.6</slf4j.version>
     </properties>
 
@@ -24,7 +24,7 @@
             <groupId>com.flowlogix</groupId>
             <artifactId>shiro-ee</artifactId>
             <version>${flowlogix.version}</version>
-            <classifier>jakarta-shiro2</classifier>
+            <classifier>shiro2</classifier>
             <exclusions>
                 <exclusion>
                     <groupId>com.flowlogix</groupId>
