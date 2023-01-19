@@ -3,7 +3,7 @@
 <Configure id="wac" class="org.eclipse.jetty.webapp.WebAppContext">
     <New class="org.eclipse.jetty.plus.jndi.EnvEntry">
         <Arg></Arg>
-        <Arg>jsf/ProjectStage</Arg>
+        <Arg>faces/ProjectStage</Arg>
         <Arg type="java.lang.String">Development</Arg>
         <Arg type="boolean">true</Arg>
     </New>
