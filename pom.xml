@@ -9,7 +9,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <shiro.version>2.0.0-lp-nov30</shiro.version>
+        <shiro.version>2.0.0-alpha-20230211</shiro.version>
         <flowlogix.version>5.3.2</flowlogix.version>
         <slf4j.version>2.0.6</slf4j.version>
     </properties>
@@ -18,18 +18,14 @@
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-web-api</artifactId>
-            <scope>provided</scope>
+            <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>com.flowlogix</groupId>
-            <artifactId>shiro-ee</artifactId>
-            <version>${flowlogix.version}</version>
-            <classifier>shiro2</classifier>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-jakarta-ee</artifactId>
+            <version>${shiro.version}</version>
+            <classifier>jakarta</classifier>
             <exclusions>
-                <exclusion>
-                    <groupId>com.flowlogix</groupId>
-                    <artifactId>flowlogix-jee</artifactId>
-                </exclusion>
                 <exclusion>
                     <groupId>org.apache.shiro</groupId>
                     <artifactId>*</artifactId>
@@ -83,6 +79,8 @@
                 <groupId>jakarta.platform</groupId>
                 <artifactId>jakarta.jakartaee-web-api</artifactId>
                 <version>10.0.0</version>
+                <scope>provided</scope>
+                <type>pom</type>
             </dependency>
             <dependency>
                 <groupId>jakarta.enterprise</groupId>
