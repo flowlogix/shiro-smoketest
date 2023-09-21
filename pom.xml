@@ -10,7 +10,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <flowlogix.version>5.5.1</flowlogix.version>
+        <flowlogix.version>5.5.2</flowlogix.version>
         <slf4j.version>2.0.9</slf4j.version>
     </properties>
 
