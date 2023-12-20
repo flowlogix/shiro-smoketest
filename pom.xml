@@ -10,7 +10,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <shiro.version>2.0.0-alpha-4</shiro.version>
+        <jakarta.ee.version>10.0.0</jakarta.ee.version>
+        <shiro2.version>2.0.0-alpha-4</shiro2.version>
         <slf4j.version>2.0.9</slf4j.version>
     </properties>
 
@@ -18,7 +19,8 @@
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-web-api</artifactId>
-            <type>pom</type>
+            <version>${jakarta.ee.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.shiro</groupId>
@@ -60,13 +62,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>jakarta.platform</groupId>
-                <artifactId>jakarta.jakartaee-web-api</artifactId>
-                <version>10.0.0</version>
-                <scope>provided</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
                 <groupId>jakarta.enterprise</groupId>
                 <artifactId>jakarta.enterprise.cdi-api</artifactId>
                 <version>4.0.1</version>
@@ -74,7 +69,7 @@
             <dependency>
                 <groupId>org.apache.shiro</groupId>
                 <artifactId>shiro-bom</artifactId>
-                <version>${shiro.version}</version>
+                <version>${shiro2.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
