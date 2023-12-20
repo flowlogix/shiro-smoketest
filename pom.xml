@@ -10,8 +10,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <flowlogix.version>5.5.2</flowlogix.version>
         <slf4j.version>2.0.9</slf4j.version>
+        <shiro2.version>2.0.0-alpha-4</shiro2.version>
     </properties>
 
     <dependencies>
@@ -21,9 +21,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.flowlogix</groupId>
-            <artifactId>shiro-ee</artifactId>
-            <version>${flowlogix.version}</version>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-jakarta-ee</artifactId>
+            <version>${shiro2.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
