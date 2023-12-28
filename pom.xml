@@ -10,7 +10,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <slf4j.version>2.0.9</slf4j.version>
+        <slf4j.version>2.0.10</slf4j.version>
         <shiro2.version>2.0.0-alpha-4</shiro2.version>
     </properties>
 
