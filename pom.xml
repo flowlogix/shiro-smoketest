@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
         <jakarta.ee.version>10.0.0</jakarta.ee.version>
-        <shiro2.version>2.0.0-alpha-4</shiro2.version>
+        <shiro2.version>2.0.0</shiro2.version>
         <slf4j.version>2.0.12</slf4j.version>
     </properties>
 
