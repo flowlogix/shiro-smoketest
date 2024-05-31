@@ -16,7 +16,7 @@
     <properties>
         <maven.compiler.release>11</maven.compiler.release>
         <slf4j.version>2.0.13</slf4j.version>
-        <shiro2.version>2.0.0</shiro2.version>
+        <shiro2.version>2.0.1</shiro2.version>
     </properties>
 
     <dependencies>
