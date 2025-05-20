@@ -9,7 +9,7 @@
 
     <parent>
         <groupId>com.flowlogix</groupId>
-        <artifactId>base-pom</artifactId>
+        <artifactId>infra-pom</artifactId>
         <version>52</version>
     </parent>
 
@@ -47,11 +47,6 @@
             <classifier>jakarta</classifier>
         </dependency>
         <dependency>
-            <groupId>org.omnifaces</groupId>
-            <artifactId>omnifaces</artifactId>
-            <version>4.6.2</version>
-        </dependency>
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-jdk14</artifactId>
             <version>${slf4j.version}</version>
@@ -76,6 +71,11 @@
                 <version>${shiro2.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.omnifaces</groupId>
+                <artifactId>omnifaces</artifactId>
+                <version>4.6.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
