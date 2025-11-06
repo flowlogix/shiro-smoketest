@@ -66,6 +66,11 @@
                 <version>4.1.0</version>
             </dependency>
             <dependency>
+                <groupId>jakarta.faces</groupId>
+                <artifactId>jakarta.faces-api</artifactId>
+                <version>4.0.1</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.shiro</groupId>
                 <artifactId>shiro-bom</artifactId>
                 <version>${shiro2.version}</version>
@@ -90,6 +95,10 @@
                 <dependency>
                     <groupId>jakarta.enterprise</groupId>
                     <artifactId>jakarta.enterprise.cdi-api</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>jakarta.faces</groupId>
+                    <artifactId>jakarta.faces-api</artifactId>
                 </dependency>
                 <dependency>
                     <groupId>org.slf4j</groupId>

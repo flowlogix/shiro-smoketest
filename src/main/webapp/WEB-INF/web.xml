@@ -11,4 +11,8 @@
         <param-name>org.apache.shiro.form-resubmit.secure-cookies</param-name>
         <param-value>false</param-value>
     </context-param>
+    <context-param>
+        <param-name>org.apache.shiro.ee.session-tracking-configuration.disabled</param-name>
+        <param-value>true</param-value>
+    </context-param>
 </web-app>
