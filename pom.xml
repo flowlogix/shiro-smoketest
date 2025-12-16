@@ -97,12 +97,10 @@
                 <dependency>
                     <groupId>jakarta.enterprise</groupId>
                     <artifactId>jakarta.enterprise.cdi-api</artifactId>
-                    <scope>runtime</scope>
                 </dependency>
                 <dependency>
                     <groupId>jakarta.faces</groupId>
                     <artifactId>jakarta.faces-api</artifactId>
-                    <scope>runtime</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.slf4j</groupId>
