@@ -10,13 +10,11 @@
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>infra-pom</artifactId>
-        <version>93</version>
+        <version>95</version>
     </parent>
 
     <properties>
         <maven.compiler.release>11</maven.compiler.release>
-        <slf4j.version>2.0.17</slf4j.version>
-        <shiro2.version>2.0.6</shiro2.version>
     </properties>
 
     <dependencies>
@@ -27,63 +25,16 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-jakarta-ee</artifactId>
-            <classifier>jakarta</classifier>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-cdi</artifactId>
-            <classifier>jakarta</classifier>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-core</artifactId>
-            <classifier>jakarta</classifier>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-web</artifactId>
-            <classifier>jakarta</classifier>
+            <groupId>com.flowlogix.depchain</groupId>
+            <artifactId>shiro-jakarta</artifactId>
+            <version>103</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-jdk14</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>${slf4j.version}</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>jakarta.enterprise</groupId>
-                <artifactId>jakarta.enterprise.cdi-api</artifactId>
-                <version>4.1.0</version>
-            </dependency>
-            <dependency>
-                <groupId>jakarta.faces</groupId>
-                <artifactId>jakarta.faces-api</artifactId>
-                <version>4.1.2</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.shiro</groupId>
-                <artifactId>shiro-bom</artifactId>
-                <version>${shiro2.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.omnifaces</groupId>
-                <artifactId>omnifaces</artifactId>
-                <version>4.7.1</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <profiles>
         <profile>
@@ -95,15 +46,16 @@
                 <dependency>
                     <groupId>jakarta.enterprise</groupId>
                     <artifactId>jakarta.enterprise.cdi-api</artifactId>
+                    <version>4.1.0</version>
                 </dependency>
                 <dependency>
                     <groupId>jakarta.faces</groupId>
                     <artifactId>jakarta.faces-api</artifactId>
+                    <version>4.1.2</version>
                 </dependency>
                 <dependency>
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-api</artifactId>
-                    <version>${slf4j.version}</version>
                     <scope>provided</scope>
                 </dependency>
             </dependencies>
@@ -113,9 +65,9 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>11.0.26</version>
+                <groupId>org.eclipse.jetty.ee11</groupId>
+                <artifactId>jetty-ee11-maven-plugin</artifactId>
+                <version>12.1.5</version>
             </plugin>
         </plugins>
     </build>
