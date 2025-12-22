@@ -10,7 +10,7 @@
     <parent>
         <groupId>com.flowlogix</groupId>
         <artifactId>base-pom</artifactId>
-        <version>96</version>
+        <version>98</version>
     </parent>
 
     <properties>
