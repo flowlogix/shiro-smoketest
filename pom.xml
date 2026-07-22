@@ -15,6 +15,7 @@
 
     <properties>
         <maven.compiler.release>11</maven.compiler.release>
+        <shiro.version>3.0.0</shiro.version>
     </properties>
 
     <dependencies>
@@ -25,9 +26,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.flowlogix.depchain</groupId>
-            <artifactId>shiro-jakarta</artifactId>
-            <version>128</version>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-jakarta-ee</artifactId>
+            <version>${shiro.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -57,10 +58,6 @@
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-api</artifactId>
                     <scope>provided</scope>
-                </dependency>
-                <dependency>
-                    <groupId>jakarta.faces</groupId>
-                    <artifactId>jakarta.faces-api</artifactId>
                 </dependency>
             </dependencies>
         </profile>
