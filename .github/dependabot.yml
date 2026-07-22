@@ -13,10 +13,18 @@ updates:
     ignore:
     - dependency-name: "jakarta.faces:jakarta.faces-api"
       update-types: ["version-update:semver-major"]
+    groups:
+      maven-dependencies:
+        patterns:
+          - '*'
 
   - package-ecosystem: "maven"
     directory: "/"
-    target-branch: 'jakarta-ee-10'
+    target-branch: 'jakarta-ee-11'
     open-pull-requests-limit: 50
     schedule:
       interval: "daily"
+    groups:
+      maven-dependencies:
+        patterns:
+          - '*'
